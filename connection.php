@@ -5,7 +5,7 @@
    $pass = "libpass";
 	 $dsn = "mysql:host=localhost;dbname=library";
 	 $db = new PDO ($dsn, $usern, $pass);
-	 print ("Connected\n");
+	 //print ("Connected\n");
 	}
 	catch (PDOException $e)
 	{
