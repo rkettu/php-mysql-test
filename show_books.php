@@ -1,5 +1,5 @@
 <?php include "menu.php"; ?>
-<?php include "connection.php" ?>
+<?php include "C:\\tests\\connection.php" ?>
 <?php
   $sql="select * from books";
   $books=$db->query($sql);

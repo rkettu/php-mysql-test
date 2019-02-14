@@ -1,9 +1,11 @@
-<?php include "menu.php"; ?>
+
+
+Muokkaus
 
 <?php
 include 'C:\\tests\\connection.php';
-	$stmt=$db->prepare("INSERT INTO books (books_id, books_name, author, isbn)
-  VALUES(:books_id, :books_name, :author, :isbn)");
+	$stmt=$db->prepare("UPDATE books SET books_name=:books_name, author=:author, isbn=:isbn
+    WHERE books_id=:books_id");
 		$stmt->bindParam(':books_id', $_POST["books_id"]);
 		$stmt->bindParam(':books_name', $_POST["books_name"]);
 		$stmt->bindParam(':author', $_POST["author"]);
@@ -16,5 +18,3 @@ include 'C:\\tests\\connection.php';
     print_r($_POST);
 }
  ?>
-
-<?php include "footer.php"; ?>

@@ -1,5 +1,5 @@
 <?php include "menu.php"; ?>
-<?php include "connection.php" ?>
+<?php include "C:\\tests\\connection.php" ?>
 
 <h1>Lisää kirja</h1>
 <form class="" action="new_books.php" method="post">
